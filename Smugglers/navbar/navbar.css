@@ -1,0 +1,110 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a
+{
+    text-decoration: none;
+}
+.navbar
+{
+    background-color: #82152D;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    max-width: 100%;
+}
+
+.navbar .container
+{
+    width: 1400px;
+    max-width: 100%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+.navbar .container .left__content span
+{
+    font-family: 'Young Serif', serif;
+    color: rgba(226, 226, 91, 0.502);
+    font-size: 18px;
+    cursor: pointer;
+}
+.navbar .container .right__content
+{
+    display: flex;
+}
+.navbar .container .right__content .flags
+{
+    margin-left: 20px;
+    display: flex;
+    padding: 4px;
+    gap: 10px;
+    cursor: pointer;
+}
+.navbar .container .right__content .flags img
+{
+    width: 20px;
+    height: 13px;
+}
+
+.navbar .container .right__content ul
+{
+   display: flex;
+   gap: 15px;
+
+}
+.navbar .container .right__content ul li
+{
+    list-style-type: none;
+}
+.navbar .container .right__content ul li .active
+{
+    color: white;
+}
+.navbar .container .right__content ul li a
+{
+    font-size: 18px;
+    color: black;
+    font-family: 'Young Serif', serif;
+    transition:  0.3s;
+}
+.navbar .container .right__content ul li a:hover
+{
+    color: white;
+}
+
+@media only screen and (max-width: 550px)
+{
+    .navbar .container .left__content span
+    {
+        font-size: 14px !important;
+    }
+    .navbar .container .right__content ul li a {
+        font-size: 14px !important;
+    }
+    .navbar .container .right__content .flags img {
+        width: 17px  !important;
+        height: 10px !important;
+    }
+    .navbar .container .right__content .flags {
+        padding: 0px !important;
+    }
+}
+
+@media only screen and (max-width: 460px)
+{
+    .navbar .container .left__content span
+    {
+        font-size: 10px !important;
+    }
+    .navbar .container .right__content ul li a {
+        font-size: 10px !important;
+    }
+    .navbar .container .right__content .flags img {
+        width: 14px  !important;
+        height: 8px !important;
+    }
+}
